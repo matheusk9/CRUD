@@ -1,0 +1,68 @@
+/* container login */
+
+#login-container, #register-container{
+    background-color: #fff;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh; /*medida proporcional á tela do usuario*/
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* formulario */
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input{ /*colocando cada input na sua linha e alinhando labels*/
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #323232; /* destacando com borda a caixa de texto */
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus{ /*destaca ao passar ou clicar com mouse */
+    border-bottom: 2px solid #085588;
+}
+
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"]{ /*como o submit nao tem id referenciamos ele entre [] */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:none;
+    height: 40px;
+    border-radius: 20px;  /*faz o 'raio'(borda)*/
+    margin-top: 30px;
+    color: #fff;
+    background-color: #085588;
+    cursor: pointer;    /*faz com que apareça a mãozinha do mouse */
+}
+
+input[type="submit"]:hover{
+    background-color: #1b223c;
+    transition: .5s;    /*deixa o efeito mais suave */
+}
+
+#login-container p, #register-container p{
+    margin-bottom: 10px;
+}
